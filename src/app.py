@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import os
-from document_loader import load_documents
+from .document_loader import load_documents
+
 from search import search
 
 app = Flask(__name__)
