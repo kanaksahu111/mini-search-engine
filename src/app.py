@@ -1,9 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import os
-from .document_loader import load_documents
-
 from search import search
-
+from document_loader import load_documents
 app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(__file__)
